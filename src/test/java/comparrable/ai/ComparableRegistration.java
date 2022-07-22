@@ -141,20 +141,20 @@ public class ComparableRegistration extends base {
 			  Thread.sleep(3000); 
 			  js.executeScript("window.scrollBy(0,800)");
 		        //This will scroll the page till the element is found	
-				 wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Complete Registration")));
-				 WebElement completeRegistration = driver.findElement(By.linkText("Complete Registration"));
-		        js.executeScript("arguments[0].scrollIntoView();", completeRegistration);
-		        completeRegistration.click();
-		        Thread.sleep(1000);
-		        tabs = new ArrayList<String> (driver.getWindowHandles());
-		        driver.switchTo().window(tabs.get(2));
-			    Thread.sleep(2000);
-
-				 driver.findElement(By.xpath("/html/body/div[3]/div/button")).click();	
-				 Thread.sleep(1000);
-			        String welcomeMesssage=driver.findElement(By.xpath("//div/div[1]/div/div[2]/div/div[1]/p")).getText();
-					 Assert.assertEquals(welcomeMesssage, "Publicly traded companies");
-		
+//				 wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Complete Registration")));
+//				 WebElement completeRegistration = driver.findElement(By.linkText("Complete Registration"));
+//		        js.executeScript("arguments[0].scrollIntoView();", completeRegistration);
+//		        completeRegistration.click();
+//		        Thread.sleep(1000);
+//		        tabs = new ArrayList<String> (driver.getWindowHandles());
+//		        driver.switchTo().window(tabs.get(2));
+//			    Thread.sleep(2000);
+//
+//				 driver.findElement(By.xpath("/html/body/div[3]/div/button")).click();	
+//				 Thread.sleep(1000);
+//			        String welcomeMesssage=driver.findElement(By.xpath("//div/div[1]/div/div[2]/div/div[1]/p")).getText();
+//					 Assert.assertEquals(welcomeMesssage, "Publicly traded companies");
+//		
 		
 	}
 	
