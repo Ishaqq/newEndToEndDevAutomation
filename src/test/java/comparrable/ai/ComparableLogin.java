@@ -26,7 +26,7 @@ public class ComparableLogin extends base {
 		
 	}
 	@Test
-	public void comparrableRegistration() throws IOException, InterruptedException {
+	public void comparrableLogin() throws IOException, InterruptedException {
 		String email="zakluka8@soccerfit.com";
 		String password="12345678";
 		 String successMessage="Here will be success message on Login";
