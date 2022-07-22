@@ -25,7 +25,7 @@ import org.testng.annotations.Test;
 
 import resources.base;
 
-public class ComparableRegistration extends base {
+public class ComparableRegistration2 extends base {
 	public WebDriver driver;
 	String email="";
 	public static Logger log=LogManager.getLogger(base.class.getName());
@@ -130,7 +130,31 @@ public class ComparableRegistration extends base {
 			 Assert.assertEquals(actualMesssage, successMessage);
 			 
 			  driver.switchTo().window(tabs.get(1));
-			  Thread.sleep(2000);
+			  Thread.sleep(10000);
+//			  driver.findElement(By.xpath("//*[@id='refresh']/button")).click();
+			  js.executeScript("window.scrollBy(0,800)");
+//			  WebElement iframe = driver.findElement(By.xpath("//*[@id='aswift_4']"));
+//			  driver.switchTo().frame(iframe);
+//			  driver.findElement(By.xpath("//*[@id='dismiss-button']")).click();
+//			  driver.switchTo().defaultContent();
+//			  driver.findElement(By.xpath("//*[@id='refresh']/button")).click();
+			  Thread.sleep(3000); 
+			  js.executeScript("window.scrollBy(0,800)");
+		        //This will scroll the page till the element is found	
+//				 wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Complete Registration")));
+//				 WebElement completeRegistration = driver.findElement(By.linkText("Complete Registration"));
+//		        js.executeScript("arguments[0].scrollIntoView();", completeRegistration);
+//		        completeRegistration.click();
+//		        Thread.sleep(1000);
+//		        tabs = new ArrayList<String> (driver.getWindowHandles());
+//		        driver.switchTo().window(tabs.get(2));
+//			    Thread.sleep(2000);
+//
+//				 driver.findElement(By.xpath("/html/body/div[3]/div/button")).click();	
+//				 Thread.sleep(1000);
+//			        String welcomeMesssage=driver.findElement(By.xpath("//div/div[1]/div/div[2]/div/div[1]/p")).getText();
+//					 Assert.assertEquals(welcomeMesssage, "Publicly traded companies");
+//		
 		
 	}
 	
