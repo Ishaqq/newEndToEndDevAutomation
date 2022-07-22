@@ -1,0 +1,8 @@
+13:47:51.570 [TestNG-tests-3] INFO  resources.base - URL loaded
+13:47:51.705 [TestNG-tests-3] INFO  resources.base - Navigation displayed
+13:47:52.505 [TestNG-tests-4] INFO  resources.base - Navigated to URL
+13:47:52.555 [TestNG-tests-4] INFO  resources.base - Only url loaded
+13:47:53.564 [TestNG-tests-1] INFO  resources.base - Navigated to URL
+13:47:55.119 [TestNG-tests-2] INFO  resources.base - Url is looded
+13:47:55.304 [AsyncHttpClient-1-9] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-9
+13:47:55.304 [AsyncHttpClient-1-12] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: AsyncHttpClient-1-12

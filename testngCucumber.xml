@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- --> 
+<suite name="Suite" parallel="tests" >
+<listeners>
+<listener class-name="endToEndAutomation.Listerners"></listener>
+</listeners>
+      <test name="validate Title">
+		<classes>
+			<class name="endToEndAutomation.validateTitle" />
+		</classes>
+	</test>
+	<test name="Home Page navigation">
+		<classes>
+			<class name="endToEndAutomation.HomePage" />
+		</classes>
+	</test>
+	<test name="Validating nav bar">
+		<classes>
+			<class name="endToEndAutomation.validateNavBar" />
+		</classes>
+	</test>
+	<test name="App">
+		<classes>
+			<class name="endToEndAutomation.App" />
+		</classes>
+	</test>
+    
+</suite> <!-- Suite -->

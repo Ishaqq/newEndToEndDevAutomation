@@ -1,0 +1,8 @@
+13:10:57.164 [TestNG-tests-4] INFO  resources.base - driver initialized
+13:11:09.717 [TestNG-tests-3] INFO  resources.base - URL loaded
+13:11:09.778 [TestNG-tests-3] INFO  resources.base - Navigation displayed
+13:11:09.834 [TestNG-tests-4] INFO  resources.base - Navigated to URL
+13:11:09.877 [TestNG-tests-4] INFO  resources.base - Only url loaded
+13:11:09.943 [TestNG-tests-1] INFO  resources.base - Navigated to URL
+13:11:12.659 [TestNG-tests-2] INFO  resources.base - Url is looded
+13:11:13.772 [TestNG-tests-2] INFO  resources.base - Login verified
