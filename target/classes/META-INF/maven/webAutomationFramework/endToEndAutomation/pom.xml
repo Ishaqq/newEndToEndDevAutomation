@@ -107,13 +107,13 @@
 			<artifactId>java-client</artifactId>
 			<version>8.1.1</version>
 		</dependency>
--->
+
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
 			<version>3.10.1</version>
 			<type>maven-plugin</type>
-		</dependency>
+		</dependency> -->
 
 	</dependencies>
 	<build>
@@ -125,7 +125,7 @@
 		</resources>
 		<pluginManagement>
 			<plugins>
-				<!--	<plugin>
+					<plugin> 
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.0.0-M5</version>
@@ -134,15 +134,8 @@
 							<suiteXmlFile>testng3.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
-				</plugin> -->
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
-					</configuration>
-				</plugin>
+				</plugin> 
+				
 			</plugins>
 		</pluginManagement>
 	</build>

@@ -3,18 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="comparrable.ai.ComparableRegistration">
-        <methods>
-          <include name="setUp"/>
-          <include name="comparrableRegistration"/>
-        </methods>
-      </class> <!-- comparrable.ai.ComparableRegistration -->
       <class name="comparrable.ai.ComparableLogin">
         <methods>
           <include name="comparrableRegistration"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- comparrable.ai.ComparableLogin -->
+      <class name="comparrable.ai.ComparableRegistration">
+        <methods>
+          <include name="setUp"/>
+          <include name="comparrableRegistration"/>
+        </methods>
+      </class> <!-- comparrable.ai.ComparableRegistration -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
