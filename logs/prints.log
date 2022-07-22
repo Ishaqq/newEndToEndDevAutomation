@@ -1,3 +1,0 @@
-15:05:19.369 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x518cae3544135d91
-15:05:19.431 [main] INFO  resources.base - driver initialized
-15:05:20.212 [main] INFO  resources.base - driver initialized
