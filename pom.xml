@@ -111,15 +111,17 @@
 		</resources>
 		<pluginManagement>
 			<plugins>
-				<plugin>
+					<plugin> 
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					
 					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
 					</configuration>
-				</plugin>
-
+				</plugin> 
+				
 			</plugins>
 		</pluginManagement>
 	</build>
