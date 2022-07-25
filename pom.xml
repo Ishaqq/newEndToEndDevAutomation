@@ -140,7 +140,7 @@
   <artifactId>maven-compiler-plugin</artifactId>
   <configuration>
 <fork>true</fork>
-<executable>C:\java\java-1.8.0-openjdk\bin\javac.exe</executable>
+<executable>C:\Program Files\Java\jdk-18.0.1.1\bin\javac.exe</executable>
 <source>1.8</source>
 <target>1.8</target>
   </configuration>
