@@ -126,11 +126,7 @@ public class ComparableRegistration extends base {
 
 			 driver.findElement(By.xpath("//*[@id=\"Onboarding_Registration_Get_Access_Clicked_Success\"]/div[9]/button")).click();
 			 Thread.sleep(3000);
-			 String actualMesssage=driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[1]/section/div/div/div/h2")).getText();
-			 Assert.assertEquals(actualMesssage, successMessage);
-			 
-			  driver.switchTo().window(tabs.get(1));
-			  Thread.sleep(2000);
+			
 		
 	}
 	
