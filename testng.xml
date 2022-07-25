@@ -7,4 +7,5 @@
       <class name="comparrable.ai.ComparableLogin"/>
     </classes>
   </test> <!-- Test -->
+  
 </suite> <!-- Suite -->
