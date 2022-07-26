@@ -6,13 +6,13 @@
 	<properties>
 
 		<selenium.version>4.0.0</selenium.version>
-		<maven.compiler.source>18</maven.compiler.source>
-		<maven.compiler.target>18</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 
 
 	</properties>
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java This is Test Version-->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -101,19 +101,11 @@
 			<version>4.1.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.appium/java-client 
 		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>8.1.1</version>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm</artifactId>
+			<version>6.2</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.10.1</version>
-			<type>maven-plugin</type>
-		</dependency> -->
 
 	</dependencies>
 	<build>
@@ -125,17 +117,24 @@
 		</resources>
 		<pluginManagement>
 			<plugins>
-					<plugin> 
+
+				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.0.0-M5</version>
+					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
-						<suiteXmlFiles>
-							<suiteXmlFile>testng3.xml</suiteXmlFile>
-						</suiteXmlFiles>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+						<debug>true</debug>
 					</configuration>
-				</plugin> 
-				
+					<dependencies>
+						<dependency>
+							<groupId>org.ow2.asm</groupId>
+							<artifactId>asm</artifactId>
+							<version>6.2</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+
 			</plugins>
 		</pluginManagement>
 	</build>
