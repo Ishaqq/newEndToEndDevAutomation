@@ -120,19 +120,13 @@
 
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M5</version>
 					<configuration>
-						<source>${java.version}</source>
-						<target>${java.version}</target>
-						<debug>true</debug>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
 					</configuration>
-					<dependencies>
-						<dependency>
-							<groupId>org.ow2.asm</groupId>
-							<artifactId>asm</artifactId>
-							<version>6.2</version>
-						</dependency>
-					</dependencies>
 				</plugin>
 
 			</plugins>
