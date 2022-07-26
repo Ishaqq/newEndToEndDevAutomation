@@ -6,6 +6,8 @@
       <class name="comparrable.ai.ComparableRegistration"/>
       <class name="comparrable.ai.ComparableLogin"/>
       <class name="comparrable.ai.testing"/>
+      
+      
     </classes>
   </test> <!-- Test -->
   
